@@ -16,7 +16,7 @@ const getUser = () => {
                 const listItem = document.createElement('li');
                 listItem.appendChild(
                     document.createElement('strong')
-                ).textContent = listing.name.first;
+                ).textContent = `${listing.name.first} ${listing.name.last} in ${listing.location.city},${listing.location.state} ${listing.location.postcode} ${listing.location.country}`;
                 myList.appendChild(listItem);
             }
 
